@@ -1,0 +1,429 @@
+* {
+  box-sizing: border-box;
+  font-weight: 500;
+  white-space: none;
+}
+*::selection {
+  color: white;
+  background-color: #f9c10b;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+main {
+  overflow: hidden;
+}
+/*
+--------------------------------------------
+Header stling
+-------------------------------------------
+*/
+
+.header {
+  padding: 10px 0 0 0;
+  height: auto;
+  width: auto;
+  font-size: 1rem;
+  font-weight: 100;
+  color: white;
+}
+.header i {
+  color: black;
+}
+
+.contacts-icons i {
+  /* background-color: white; */
+  border-radius: 100px;
+}
+.contacts-icons i a {
+  font-size: 1rem;
+  padding: 5px;
+  color: black;
+}
+.days {
+  margin-left: 5px;
+}
+
+/*
+--------------------------------------------
+Navbar stling
+-------------------------------------------
+*/
+
+#navbar nav .navbar-brand {
+  font-size: 2rem;
+  margin: 0 20px;
+}
+#collapse-btn {
+  background-color: black;
+}
+
+#navbar ul li {
+  transition: all 300ms cubic-bezier(0.4, 0, 0.2, 1);
+  width: 100px;
+  height: 35px;
+  margin: 0 20px 0 0;
+  font-size: 1rem;
+}
+#navbar ul li a {
+  color: grey;
+}
+
+#navbar ul li a:hover {
+  color: #dc3545;
+}
+#navbar ul li i {
+  transition: all 0.3s;
+  width: 35px;
+  height: 35px;
+  position: absolute;
+  margin-top: -5px;
+  font-size: 1.5em;
+}
+#navbar ul li a span {
+  font-size: 0;
+  transition: all 0.1s;
+}
+#navbar ul li a:hover span {
+  font-size: 16px;
+}
+#navbar ul li:hover i {
+  margin-left: 0px;
+  transform: rotate(360deg);
+}
+#navbar ul li a:hover i::before {
+  display: none;
+  border: none;
+}
+
+/* .menu-icon {
+  color: #f9c10b;
+  font-size: 2em;
+  font-weight: bolder;
+} */
+
+.menu-icon div {
+  background-color: #f9c10b;
+
+  width: 30px;
+  height: 5px;
+  margin: 5px;
+}
+.menu-icon div:nth-child(2) {
+  background-color: #dc3545;
+}
+/*
+--------------------------------------------
+Section 1  stling (Hero section)
+-------------------------------------------
+*/
+
+.slide-wrap {
+  color: white;
+  margin: 50px 50px 50px 0;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+#hero-section {
+  width: 100%;
+  height: 100vh;
+  background-image: url(./images/slide/christina-wocintechchat-com-NDoVgcS_lZM-unsplash.jpg);
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  margin-bottom: 100px;
+  animation: wosWobi 15s infinite;
+  animation-delay: 2s;
+}
+/*
+--------------------------------------------
+Hero section  animation
+-------------------------------------------
+*/
+@keyframes wosWobi {
+  50% {
+    background-image: url(./images/slide/jason-goodman-0K7GgiA8lVE-unsplash.jpg);
+  }
+  100% {
+    background-image: url(./images/slide/christina-wocintechchat-com-NDoVgcS_lZM-unsplash.jpg);
+  }
+}
+
+/*
+--------------------------------------------
+Section 2 stling (About)
+-------------------------------------------
+*/
+
+#about-ceo {
+  height: 100%;
+  overflow: hidden;
+  position: relative;
+  border-radius: 20px;
+  transition: all 2s;
+}
+
+#about-ceo .ceo-info {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 40px;
+  color: white;
+  background: linear-gradient(to top, black, transparent 90%);
+}
+#about-ceo .ceo-info p {
+  width: 80%;
+}
+#about-ceo .ceo-img-wrap {
+  height: 100%;
+  overflow: hidden;
+  border-radius: 20px;
+  object-fit: cover;
+}
+#about-ceo .ceo-img-wrap img {
+  width: 100%;
+  height: 100%;
+}
+#about .about-info {
+  width: 100%;
+  height: 60%;
+  padding: 50px;
+  border-radius: 20px;
+}
+.about-anim {
+  transition: transform 0.2s ease-in;
+}
+.about-anim:hover {
+  transform: scale(1.08);
+}
+
+#about .join-us,
+.how-you-join {
+  border-radius: 20px;
+  padding: 40px;
+  height: 100%;
+  color: white;
+}
+#about .join-us button {
+  border: none;
+  border-radius: 40px;
+  padding: 10px;
+  font-weight: 500;
+  color: white;
+  width: 100px;
+}
+/*
+--------------------------------------------
+Section 3 stling (Service)
+-------------------------------------------
+*/
+#section3 {
+  background-color: whitesmoke;
+}
+#service {
+  padding: 100px 0;
+}
+.section-header {
+  text-align: center;
+}
+
+#services-list button {
+  margin: 20px;
+  padding: 20px;
+  text-align: left;
+  border: none;
+  border-left: 5px solid grey;
+  transition: all 0.2s ease-in;
+}
+#services-list h3 {
+  transition: all 0.2s;
+}
+
+#services-list button:hover {
+  border-left: 7px solid #dc3545;
+  background-color: white;
+  box-shadow: 0 1rem 3rem rgb(0 0 0/ 18%);
+}
+
+#services-list button:hover h3 {
+  color: #f9c10b;
+}
+#services-list button span {
+  color: gray;
+}
+#services-list-displays {
+  height: 100%;
+  width: 100%;
+}
+#services-list-displays img {
+  width: 100%;
+  height: 100%;
+}
+#vid-content-display,
+#strategy-planing-display {
+  display: none;
+}
+
+/*
+--------------------------------------------
+Section 4 stling (project)
+-------------------------------------------
+*/
+#project {
+  padding: 100px 0;
+  color: white;
+  transform: all 0.2s ease-in;
+}
+#project .project {
+  object-fit: cover;
+  height: auto;
+  width: 100%;
+  border-radius: 20px;
+  margin-top: 20px;
+  overflow: hidden;
+  position: relative;
+}
+
+#project .project-title-wrap {
+  width: auto;
+  height: max-content;
+  background: linear-gradient(to top, black, transparent 90%);
+  /* position: absolute; */
+  padding: 25px 120px 30px 25px;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  box-sizing: border-box;
+  /* padding-bottom: ; */
+  position: absolute;
+  margin-bottom: -5px;
+}
+.project-title-wrap .btn button {
+  border-radius: 50%;
+  padding: 10px;
+  border: none;
+  background-color: #dc3545;
+  color: white;
+  transition: background 30ms ease-in;
+}
+/* Transition on btn background */
+.project:hover button {
+  background-color: #f9c10b;
+}
+/* .project-title-wrap {
+  transition: transform 0.2s ease-in;
+ 
+} */
+.project-title-wrap .btn {
+  position: absolute;
+  right: 25px;
+  bottom: 25px;
+}
+
+.project-title-wrap .btn button i {
+  padding: 10px;
+  font-size: 20px;
+}
+.project:hover .project-title-wrap {
+  transform-origin: bottom;
+  transform: translateY(-5px);
+}
+#project img {
+  width: 100%;
+  border-radius: 20px;
+  transition: transform 0.2s ease-in;
+}
+#project .project:hover img {
+  transform: scale(1.2);
+}
+
+/*
+--------------------------------------------
+Section 5 stling (contact)
+-------------------------------------------
+*/
+#section5 {
+  transform: skewY(8deg);
+  transform-origin: top left;
+}
+input.form-control {
+  outline: none;
+}
+.form-control {
+  width: 100%;
+  border: none;
+  padding: 13px 0;
+  border-bottom: 3px solid white;
+  background-color: transparent;
+  margin-top: 24px;
+  outline: none;
+}
+.form-control:hover {
+  background: white;
+}
+button.form-control {
+  font-weight: 500;
+  border-bottom: none;
+  border-radius: 20px;
+  background-color: #dc3545;
+}
+button.form-control:hover {
+  background-color: white;
+}
+.contact-info {
+  padding: 40px;
+  border-radius: 20px;
+}
+.contact-info-container i {
+  font-size: 1rem;
+}
+.contact-info-container i:hover {
+  color: #f9c10b;
+}
+.contact-info-container i a {
+  margin-left: 10px;
+  font-size: 0.7rem;
+  font-weight: 800;
+}
+.contact-info-container i a:hover {
+  color: #f9c10b;
+}
+.address {
+  margin-bottom: 1.5rem;
+}
+
+/*
+--------------------------------------------
+Footer stling 
+-------------------------------------------
+*/
+.site-footer {
+  padding-top: 200px;
+  padding-bottom: 50px;
+  width: auto;
+  height: auto;
+  color: white;
+}
+.copyright-text a:hover {
+  color: #dc3545;
+}
+.section5-container {
+  padding: 0 100px 100px 100px;
+  transform: skewY(-8deg);
+}
+
+/*
+--------------------------------------------
+MQ stling 
+-------------------------------------------
+*/
+
+@media screen and (max-width: 992px) {
+  #about-ceo {
+    margin-top: 50px;
+  }
+}
