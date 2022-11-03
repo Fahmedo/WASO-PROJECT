@@ -70,6 +70,9 @@ Navbar stling
 #navbar ul li a {
   color: grey;
 }
+#navbar ul li small {
+  opacity: 0;
+}
 
 #navbar ul li a:hover {
   color: #dc3545;
@@ -378,6 +381,7 @@ button.form-control:hover {
   padding: 40px;
   border-radius: 20px;
 }
+
 .contact-info-container i {
   font-size: 1rem;
 }
@@ -386,7 +390,7 @@ button.form-control:hover {
 }
 .contact-info-container i a {
   margin-left: 10px;
-  font-size: 0.7rem;
+  font-size: 0.5rem;
   font-weight: 800;
 }
 .contact-info-container i a:hover {
@@ -424,6 +428,15 @@ MQ stling
 
 @media screen and (max-width: 992px) {
   #about-ceo {
-    margin-top: 50px;
+    margin-bottom: 100px;
+  }
+  #about .about-info {
+    margin: 50px 0 50px;
+  }
+  .contact-info {
+    margin-top: 40px;
+  }
+  .section5-container {
+    padding: 0 50px 50px 50px;
   }
 }
