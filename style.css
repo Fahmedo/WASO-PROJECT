@@ -15,6 +15,10 @@ a {
 main {
   overflow: hidden;
 }
+.section--hidden {
+  opacity: 0;
+  transform: translateY(8rem);
+}
 /*
 --------------------------------------------
 Header stling
@@ -425,7 +429,9 @@ Footer stling
 MQ stling 
 -------------------------------------------
 */
-
+.hide {
+  opacity: 0;
+}
 @media screen and (max-width: 992px) {
   #about-ceo {
     margin-bottom: 100px;
